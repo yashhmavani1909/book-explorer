@@ -1,0 +1,197 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* background-color: #282c34; */
+    color: #333;
+    /* color: white; */
+}
+
+/* Header Styling */
+header {
+    background-color: #282c34;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 1.1em;
+    background-color: #61dafb;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #21a1f1;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#search-results h2 {
+    margin-bottom: 20px;
+}
+
+/* Book List */
+.book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.book {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.book button {
+    background-color: #61dafb;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book button:hover {
+    background-color: #21a1f1;
+}
+
+/* Book Details */
+.book-info {
+    display: flex;
+    gap: 20px;
+}
+
+.book-info img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.book-text h3 {
+    font-size: 2em;
+}
+
+.book-text a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #61dafb;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.book-text a:hover {
+    background-color: #21a1f1;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+
+/* Autocomplete Suggestions Styling */
+/* .autocomplete-items {
+    position: absolute;
+    background-color: rgb(143, 136, 136);
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 120px;
+    left: 21%;
+    right: 31.5%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #c4bfbf;
+} */
+
+/* Autocomplete Suggestions Styling */
+.autocomplete-items {
+    position: absolute;
+    background-color: rgb(143, 136, 136);
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 120px; /* Ensure it remains just below the search bar */
+    left: 22.8%;  /* Align to the search bar */
+    right: 28.5%; /* Align to the search bar */
+    max-height: 200px;
+    max-width: 50%;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #c4bfbf;
+}
